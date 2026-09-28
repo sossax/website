@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Juan Sossa</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav>
+        <div class="nav-links">
+
+            <a href="index.html">
+                HOME
+            </a>
+
+            <a href="projects.html" class="active">
+                PROJECTS
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- =========================
+         PROJECTS / WORKING PAGE
+         ========================= -->
+
+    <main>
+
+        <section class="projects-page">
+
+            <div class="projects-content">
+
+
+                <!-- PIXEL ART CHARACTER -->
+
+                <div class="working-image-wrapper">
+
+                    <img
+                        class="working-image"
+                        src="Images/working-character.png"
+                        alt="Juan working on a technical project"
+                    >
+
+                </div>
+
+
+                <!-- WORKING TITLE -->
+
+                <h1 class="working-title">
+
+                    WORKING<span class="blinking-cursor"></span>
+
+                </h1>
+
+
+                <!-- DESCRIPTION -->
+
+                <p class="working-description">
+
+                    THIS PAGE IS CURRENTLY UNDER CONSTRUCTION.
+                    <br>
+                    CHECK BACK SOON.
+
+                </p>
+
+
+                <!-- RETRO PROGRESS BAR -->
+
+                <div class="retro-loader">
+
+                    <div class="retro-loader-fill"></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         MOUSE GLOW
+         ========================= -->
+
+    <div class="cursor-glow"></div>
+
+
+    <!-- =========================
+         MOUSE GLOW SCRIPT
+         ========================= -->
+
+    <script>
+
+        const cursorGlow =
+            document.querySelector(".cursor-glow");
+
+        document.addEventListener("mousemove", (event) => {
+
+            cursorGlow.style.left =
+                event.clientX + "px";
+
+            cursorGlow.style.top =
+                event.clientY + "px";
+
+        });
+
+    </script>
+
+</body>
+
+</html>
